@@ -4729,6 +4729,12 @@ label monika_orchestra:
             m 1b "Really? What do you play?"
             $ instrumentname = renpy.input('What instrument do you play?').strip(' \t\n\r')
             $ persistent.instrumentname = instrumentname
+            if name == "piano":
+            m 1a "Wow! You too? This is amazing!"
+            m 3b "I would love to hear you play for me."
+            m "Maybe you could teach me how to play and we can learn together too~"
+            m "Sitting in front of the same piano, side by side..."
+            else:
             m 1a "Wow, I've always wanted to try the [instrumentname] out!"
             m 3b "I would love to hear you play for me."
             m "Maybe you could teach me how to play, too~"
